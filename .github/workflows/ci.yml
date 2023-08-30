@@ -7,9 +7,7 @@ on:
       - develop
   pull_request:
     branches:
-      - main
-      - develop
-      - "feature-**"
+      - '**'
 
 jobs:
   lint-and-build:
@@ -46,7 +44,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile --prefer-offline
 
-      - name: Linting
+      - name: Lint
         run: pnpm lint
 
       - name: Build
