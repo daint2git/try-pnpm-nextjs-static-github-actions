@@ -1,16 +1,16 @@
-name: 'PNPM install'
-description: 'Setup pnpm cache and install dependencies'
+name: "PNPM install"
+description: "Setup pnpm cache and install dependencies"
 
 inputs:
   node-version:
-    description: 'The node version to setup'
+    description: "The node version to setup"
     required: true
   pnpm-version:
-    description: 'The pnpm version to setup'
-    required: true    
+    description: "The pnpm version to setup"
+    required: true
 
 runs:
-  using: 'composite'
+  using: "composite"
 
   steps:
     - name: Checkout
