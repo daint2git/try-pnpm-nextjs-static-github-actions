@@ -12,7 +12,6 @@ on:
 env:
   NODE_VERSION: 20
   PNPM_VERSION: 8
-  NEXT_TELEMETRY_DISABLED: 1
 
 jobs:
   lint:
@@ -31,6 +30,8 @@ jobs:
       - name: Lint
         shell: bash
         run: pnpm lint
+        env:
+          NEXT_TELEMETRY_DISABLED: 1
 
   build:
     runs-on: ubuntu-latest
@@ -59,3 +60,5 @@ jobs:
       - name: Build
         shell: bash      
         run: pnpm build
+        env:
+          NEXT_TELEMETRY_DISABLED: 1
