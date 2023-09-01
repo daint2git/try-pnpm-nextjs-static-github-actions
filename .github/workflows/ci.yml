@@ -62,4 +62,4 @@ jobs:
         run: pnpm build
         env:
           NEXT_TELEMETRY_DISABLED: 1
-          BASE_PATH: try-pnpm-nextjs-static-github-actions
+          BASE_PATH: "try-pnpm-nextjs-static-github-actions"
