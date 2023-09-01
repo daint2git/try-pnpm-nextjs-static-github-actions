@@ -10,7 +10,7 @@ on:
       - "**"
 
 env:
-  NODE_VERSION: 20
+  NODE_VERSION: 18
   PNPM_VERSION: 8
 
 jobs:
@@ -62,3 +62,4 @@ jobs:
         run: pnpm build
         env:
           NEXT_TELEMETRY_DISABLED: 1
+          BASE_PATH: try-pnpm-nextjs-static-github-actions
